@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-
-"""a program that computes all the value of integers"""
-
 def square_matrix_simple(matrix=[]):
-    square_matrix = []
-    for line in matrix:
-        line_let = []
-        for item in line:
-            line_let.append(item ** 2)
-        square_matrix.append(line_let)
-    return (square_matrix)
+    """
+    A function that computes all the square
+    values of all integers in the matrix
+    """
+    new_matrix = []
+    for col in matrix:
+        result = [x**2 for x in col]
+        new_matrix.append(result)
+    return new_matrix
